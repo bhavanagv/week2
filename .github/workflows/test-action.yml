@@ -1,0 +1,21 @@
+name: Test GitHub Action
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 23f3004066@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
+
+      - name: Verify Execution
+        run: echo "This is a test GitHub Action triggered successfully!"
